@@ -5,7 +5,7 @@ default:
     features: 'features'
     bootstrap: 'features/bootstrap'
   extensions:
-    Behat\MinkExtension\Extension:
+    Behat\MinkExtension:
       goutte: ~
       javascript_session: selenium2
       selenium2:
