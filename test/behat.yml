@@ -1,0 +1,18 @@
+default:
+  context:
+    class: 'FeatureContext'
+  paths:
+    features: 'features'
+    bootstrap: 'features/bootstrap'
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      javascript_session: selenium2
+      selenium2:
+        wd_host: http://localhost:4444/wd/hub
+      base_url: http://localhost
+    Drupal\DrupalExtension\Extension:
+      blackbox: ~
+      api_driver: 'drupal'
+      drupal:
+        drupal_root: '../'
