@@ -46,3 +46,7 @@ Thumbs.db
 # Node #
 ########
 node_modules
+
+# Composer #
+############
+vendor
